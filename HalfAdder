@@ -1,0 +1,33 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: gracebr28
+// Engineer: Grace Brazil
+// 
+// Create Date: 04/28/2019 12:57:08 AM
+// Design Name: Practice
+// Module Name: half_adder
+// Project Name: Learning FPGA
+// Target Devices: Zybo Z7
+// Tool Versions: 1.0
+// Description: 
+// 
+// Dependencies: 
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+//////////////////////////////////////////////////////////////////////////////////
+
+
+module half_adder(
+    input a,
+    input b,
+    output sum,
+    output cout
+    );
+    
+    assign sum = a ^ b; //bitwise XOR
+    assign cout = a & b; //bitwise AND
+    
+endmodule 
