@@ -21,13 +21,13 @@
 
 
 module half_adder(
-    input a,
-    input b,
-    output sum,
-    output cout
+    input i_a,
+    input i_b,
+    output o_sum,
+    output o_cout
     );
     
-    assign sum = a ^ b; //bitwise XOR
-    assign cout = a & b; //bitwise AND
+    assign o_sum = i_a ^ i_b; //bitwise XOR
+    assign o_cout = i_a & i_b; //bitwise AND
     
 endmodule 
